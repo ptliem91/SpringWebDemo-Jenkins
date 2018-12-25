@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="./resources/css/animation.css">
+	<link rel="stylesheet" href="../resources/css/animation.css">
 </head>
 <body>
 
