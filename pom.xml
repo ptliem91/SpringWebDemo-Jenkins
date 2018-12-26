@@ -6,7 +6,7 @@
 
     <groupId>com.liempt.springwebdemo</groupId>
     <artifactId>springwebdemo</artifactId>
-    <version>1.0</version>
+    <version></version>
     <packaging>war</packaging>
     <properties>
        	<jdk.version>1.8</jdk.version>
