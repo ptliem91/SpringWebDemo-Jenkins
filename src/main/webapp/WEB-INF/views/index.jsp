@@ -1,36 +1,48 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-	<link href="/springwebdemo/resources/css/animation.css" rel="stylesheet">
-	<link rel="icon" 
-      type="image/png" 
-      href="http://example.com/myicon.png">
-	
 	<meta charset="UTF-8">
     <title>Demo</title>
+    
+    <style> 
+		div {
+		  width: 100px;
+		  height: 100px;
+		  background-color: red;
+		  position: relative;
+		  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+		  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+		  animation-name: example;
+		  animation-duration: 4s;
+		  animation-iteration-count: 9999;
+		  animation-direction: alternate;  
+		}
+		
+		/* Safari 4.0 - 8.0 */
+		@-webkit-keyframes example {
+		  0%   {background-color:red; left:0px; top:0px;}
+		  25%  {background-color:yellow; left:200px; top:0px;}
+		  50%  {background-color:blue; left:200px; top:200px;}
+		  75%  {background-color:green; left:0px; top:200px;}
+		  100% {background-color:red; left:0px; top:0px;}
+		}
+		
+		/* Standard syntax */
+		@keyframes example {
+		  0%   {background-color:red; left:0px; top:0px;}
+		  25%  {background-color:yellow; left:200px; top:0px;}
+		  50%  {background-color:blue; left:200px; top:200px;}
+		  75%  {background-color:green; left:0px; top:200px;}
+		  100% {background-color:red; left:0px; top:0px;}
+		}
+		</style>
 </head>
 
 <body>
 
-	<div class="container">
-		
-		<div class="bird-container bird-container--one">
-			<div class="bird bird--one"></div>
-		</div>
-		
-		<div class="bird-container bird-container--two">
-			<div class="bird bird--two"></div>
-		</div>
-		
-		<div class="bird-container bird-container--three">
-			<div class="bird bird--three"></div>
-		</div>
-		
-		<div class="bird-container bird-container--four">
-			<div class="bird bird--four"></div>
-		</div>
-		
-	</div>
+	<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+	<div></div>
 
 </body>
 </html>
